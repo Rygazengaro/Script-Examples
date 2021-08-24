@@ -15,7 +15,7 @@ reg import "\\networkshare\Programs\SSO\Support Tools\ER\VMWAREPolicies.reg"
 reg import "\\networkshare\programs\SSO\Support Tools\ER\WinLogon.reg"
 
 #Installation of VMware Client
-$vars = "/silent /norestart VDM_SERVER=horizon.azkrmc.org LOGINASCURRENTUSER_DISPLAY=0 LOGINASCURRENTUSER_DEFAULT=0"
+$vars = "/silent /norestart VDM_SERVER=horizon.networkserver.org LOGINASCURRENTUSER_DISPLAY=0 LOGINASCURRENTUSER_DEFAULT=0"
 $vm = "\\networkshare\Programs\SSO\Mobile Carts and VM Kiosks\VMware-Horizon-Client-5.4.2-15936851.exe"
 New-Item -ItemType directory -Path C:\VM_TEMP | Out-Null
 copy $vm C:\VM_TEMP\
